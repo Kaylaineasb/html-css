@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
     <style>
       body{
           height: 98vh;
@@ -23,20 +24,33 @@
           left: 50%;
           top: 50%;
           transform: translate(-50%,-50%);
+          
       }
+      ::-webkit-input-placeholder{
+          color: black;
+          font-style: italic;
+      }
+      
     </style>
 </head>
 <body>
     <main>
-      <h1>Login</h1>
-      <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laboriosam aliquid sunt rerum sint, non quod vel labore voluptatum modi quo quas reiciendis, nesciunt dolorum voluptates rem explicabo quasi reprehenderit.
-      </p>
-      <h2>E-mail</h2>
-      <input type="text">
-      <h2>Senha</h2>
-      <input type="password">
-      <a href="">Entrar</a>
+        <form method="POST" action="">
+            <h1>Login</h1>
+            <hr id="separar" size=2.5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laboriosam aliquid sunt rerum sint, non quod vel labore voluptatum modi quo quas reiciendis, nesciunt dolorum voluptates rem explicabo quasi reprehenderit.
+            </p>
+            <p>
+                <h2>E-mail</h2>
+                <input type="email" name="E-mail" placeholder="Coloque aqui seu e-mail" required="required">
+            </p>
+            
+            <h2>Senha</h2>
+            <input type="password" name="Senha" placeholder="Coloque aqui sua senha" required="required">
+            <input type="submit">
+        </form>
+      
     </main>
 </body>
 </html>
