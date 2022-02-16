@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
       body{
           height: 98vh;
        background: black url("imagens/wallpaper2.jpg") center center no-repeat fixed;
@@ -28,9 +29,14 @@
       }
       ::-webkit-input-placeholder{
           color: black;
-          font-style: italic;
+          font-family: 'Syne Tactile', cursive;
       }
-      
+      h1{
+        font-family: 'Syne Tactile', cursive;
+      }
+      h2{
+        font-family: 'Syne Tactile', cursive;
+      }
     </style>
 </head>
 <body>
@@ -39,15 +45,14 @@
             <h1>Login</h1>
             <hr id="separar" size=2.5>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laboriosam aliquid sunt rerum sint, non quod vel labore voluptatum modi quo quas reiciendis, nesciunt dolorum voluptates rem explicabo quasi reprehenderit.
-            </p>
-            <p>
                 <h2>E-mail</h2>
                 <input type="email" name="E-mail" placeholder="Coloque aqui seu e-mail" required="required">
             </p>
+            <p>
+                <h2>Senha</h2>
+                <input type="password" name="Senha" placeholder="Coloque aqui sua senha" required="required">
+            </p>
             
-            <h2>Senha</h2>
-            <input type="password" name="Senha" placeholder="Coloque aqui sua senha" required="required">
             <input type="submit">
         </form>
       
