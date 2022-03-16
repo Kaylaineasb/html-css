@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASB</title>
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+      body{
+          height: 98vh;
+       background: black url("imagens/wallpaper2.jpg") center center no-repeat fixed;
+       background-size: cover;
+      }
+      main{
+          margin: auto;
+          background-color: rgba(255, 255, 255, 0.61);
+          width: 400px;
+          padding: 10px;
+          border-radius: 10px;
+          text-align: center;
+          box-shadow: 1px 1px 1px rgb(56, 56, 56);
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          
+      }
+      ::-webkit-input-placeholder{
+          color: black;
+          font-family: 'Syne Tactile', cursive;
+      }
+      h1{
+        font-family: 'Syne Tactile', cursive;
+      }
+      h2{
+        font-family: 'Syne Tactile', cursive;
+      }
+      .input[type="submit"]{
+          color: black;
+      }
+    </style>
+</head>
+<body>
+    <main>
+        <form method="POST" action="">
+            <h1>Cadastro</h1>
+            <hr id="separar" size=2.5>
+            <p>
+                <h2>Nome</h2>
+                <input type="email" name="E-mail" placeholder="Coloque aqui seu nome" required="required">
+            </p>
+            <p>
+                <h2>E-mail</h2>
+                <input type="email" name="E-mail" placeholder="Coloque aqui seu e-mail" required="required">
+            </p>
+            <p>
+                <h2>Senha</h2>
+                <input type="password" name="Senha" placeholder="Crie uma senha" required="required">
+            </p>
+            <p>
+                <h2>Repita a Senha</h2>
+                <input type="password" name="Senha" placeholder="Repita a senha" required="required">
+            </p>
+            
+            <input class="bnt_Enviar" type="submit" value="Enviar">
+            <p>Já tem uma conta? <a href="pagLogin.html">Logar</a></p>
+        </form>
+      
+    </main>
+</body>
+</html>
